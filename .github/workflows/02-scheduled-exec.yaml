@@ -13,7 +13,6 @@ on:
 # trabalhos/tarefas dentro do pipeline = jobs
 jobs:
   e2e-tests:
-
     # maquina que o job vai executar
     runs-on: ubuntu-latest
 
@@ -26,11 +25,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22.x
-      
+
       # instalação do yarn
       - name: Instalando Yarn
         run: npm install -g yarn
-          
+
       # instalação das dependências
       - name: Instalando dependências
         run: yarn
